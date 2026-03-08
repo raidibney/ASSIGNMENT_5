@@ -10,11 +10,13 @@ let allIssues = [];
 
 function showLoading(){
 loadSpinner.classList.remove("hidden");
+loadSpinner.classList.add("flex");  
 issuesContainer.innerHTML="";
 }
 
 function hideLoading(){
 loadSpinner.classList.add("hidden");
+loadSpinner.classList.remove("flex");
 }
 
 // load all issues
