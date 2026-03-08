@@ -44,7 +44,7 @@
         />
       </div>
 
-      <!-- Button -->
+      
       <button onclick="searchIssues()" class="btn btn-primary w-full sm:w-auto">
         + New Issue
       </button>
@@ -53,6 +53,92 @@
 
   </div>
 </div>
+
+<!-- Dashboard part is starting from hereeee -->
+
+<div class="max-w-6xl mx-auto mt-8 px-4">
+
+ 
+      
+    <div class="flex gap-2 mb-6 bg-white rounded-xl py-4 ">
+
+      <button id="allBtn" onclick="filterIssues('all',this)" class="btn btn-primary  h-5 px-10 ml-5">
+        All
+      </button>
+
+      <button onclick="filterIssues('open',this)" class="btn btn-outline h-5 px-10 ">
+        Open
+      </button>
+
+      <button onclick="filterIssues('closed',this)" class="btn btn-outline h-5 px-10 ">
+        Closed
+      </button>
+
+    </div>
+
+
+  <div class="bg-[#FBFBFB] rounded-xl shadow-sm p-6">
+
+
+
+     
+  <div class="bg-[#FFFFFF] flex justify-between items-center mb-6 w-full py-5 rounded-xl">
+
+
+  <div class="flex items-center gap-3 ml-6 ">
+
+    <div class="rounded-full bg-purple-200 p-1">
+         <img src="./assets/Aperture.png" alt="" class="w-8 h-8">
+      
+   </div>
+
+   <div>
+    <h2 id="issueCount" class="font-bold text-lg text-black">
+      50 Issues
+    </h2>
+    <P class="">Track and manage your project issues</P>
+
+   </div>
+    
+  </div>
+
+
+
+  <div class="text-sm">
+
+    <span class="text-green-600 font-bold text-xl">
+      ● Open
+    </span>
+
+    <span class="ml-4 text-purple-600 font-bold mr-6 text-xl">
+      ● Closed
+    </span>
+
+  </div>
+
+</div>
+
+<!--loading spinner  is hereeee-->
+
+<div id="loadingSpinner" class="hidden flex justify-center items-center h-screen">
+
+  <span class="loading loading-spinner loading-lg text-primary"></span>
+
+</div>
+<!-- The div for the issues is here  -->
+
+    <div
+      id="issuesContainer"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      
+
+    </div>
+
+  </div>
+
+</div>
+
 
 <script src="./script/dashboard.js"></script>
 
