@@ -43,8 +43,8 @@
 
 
 
-- **GitHub Repository Link:**
-- **Live Site Link:**
+- **GitHub Repository Link:https://github.com/raidibney/ASSIGNMENT_5
+- **Live Site Link: https://raidibney.github.io/ASSIGNMENT_5/
 
 ---
 
